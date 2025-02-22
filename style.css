@@ -163,27 +163,40 @@ body {
     gap: 2rem;
 }
 
+/* Navigation Links */
 .nav-link {
-    color: var(--text-color);
+    color: #ffffff !important; /* Her zaman beyaz */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
 }
 
-/* Light tema için özel navbar yazı rengi */
-[data-theme="light"] .nav-link {
-    color: #1f2937; /* Koyu renk */
-}
-
 /* Active link için */
-[data-theme="light"] .nav-link.active {
-    color: var(--secondary-color);
+.nav-link.active {
+    color: var(--secondary-color) !important;
 }
 
 /* Hover durumu için */
-[data-theme="light"] .nav-link:hover {
-    color: var(--secondary-color);
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Logo için */
+.logo span {
+    color: #ffffff !important;
+}
+
+/* Navbar background için - her iki tema için koyu arka plan */
+.navbar {
+    background: rgba(27, 27, 29, 0.9) !important; /* Koyu arka plan */
+    backdrop-filter: blur(10px);
+}
+
+/* Light tema için özel ayarları kaldırıyoruz */
+[data-theme="light"] .nav-link,
+[data-theme="light"] .navbar {
+    /* Bu kısımları tamamen kaldırın */
 }
 
 .nav-link::after {
