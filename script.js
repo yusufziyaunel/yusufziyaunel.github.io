@@ -133,41 +133,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-/* Gradient Animation */
-@keyframes gradient-x {
-    0%, 100% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-}
-
-.animate-gradient-x {
-    animation: gradient-x 15s ease infinite;
-    background-size: 400% 400%;
-}
-
-/* Sparkles Effect */
-.sparkles-container {
-    position: relative;
-    display: inline-block;
-}
-
-.sparkles-effect {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-}
-
-/* Hover Effects */
-.contact-item {
-    transition: all 0.3s ease;
-}
-
-.contact-item:hover {
-    transform: translateY(-2px);
-}
 
 // Sparkles Effect
 function createSparkle() {
