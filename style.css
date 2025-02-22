@@ -171,6 +171,21 @@ body {
     position: relative;
 }
 
+/* Light tema için özel navbar yazı rengi */
+[data-theme="light"] .nav-link {
+    color: #1f2937; /* Koyu renk */
+}
+
+/* Active link için */
+[data-theme="light"] .nav-link.active {
+    color: var(--secondary-color);
+}
+
+/* Hover durumu için */
+[data-theme="light"] .nav-link:hover {
+    color: var(--secondary-color);
+}
+
 .nav-link::after {
     content: '';
     position: absolute;
