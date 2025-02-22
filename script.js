@@ -169,6 +169,40 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     transform: translateY(-2px);
 }
 
+// Sparkles Effect
+function createSparkle() {
+    const sparkle = document.createElement('div');
+    sparkle.className = 'absolute w-1 h-1 bg-white rounded-full';
+    
+    const size = Math.random() * 3;
+    sparkle.style.width = `${size}px`;
+    sparkle.style.height = `${size}px`;
+    sparkle.style.left = `${Math.random() * 100}%`;
+    sparkle.style.top = `${Math.random() * 100}%`;
+    
+    sparkle.animate([
+        { transform: 'scale(0)', opacity: 1 },
+        { transform: 'scale(1)', opacity: 0 }
+    ], {
+        duration: 700,
+        easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+    });
+    
+    return sparkle;
+}
+
+function addSparkles() {
+    const container = document.querySelector('.sparkles-effect');
+    if (!container) return;
+    
+    const sparkle = createSparkle();
+    container.appendChild(sparkle);
+    
+    setTimeout(() => sparkle.remove(), 700);
+}
+
+setInterval(addSparkles, 50);
+
 // Add CSS for copy notification
 const style = document.createElement('style');
 style.textContent = `
