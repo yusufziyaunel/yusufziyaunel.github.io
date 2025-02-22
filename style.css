@@ -193,12 +193,6 @@ body {
     backdrop-filter: blur(10px);
 }
 
-/* Light tema için özel ayarları kaldırıyoruz */
-[data-theme="light"] .nav-link,
-[data-theme="light"] .navbar {
-    /* Bu kısımları tamamen kaldırın */
-}
-
 .nav-link::after {
     content: '';
     position: absolute;
