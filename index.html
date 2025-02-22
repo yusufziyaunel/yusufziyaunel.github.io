@@ -45,33 +45,64 @@
             </div>
         </div>
     </nav>
-	    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container" data-aos="fade-up">
-            <div class="hero-content">
-                <h1>Yusuf Ziya ÜNEL</h1>
-                <h2>IP/MPLS Network Engineer</h2>
-                <p class="hero-description">
-                    Specializing in IP/MPLS networks, network automation, and technical support, and network design
-                </p>
-                <div class="hero-contact">
-                    <div class="contact-item" onclick="copyToClipboard('yusufziyaunel@gmail.com')">
-                        <i class="fas fa-envelope"></i>
-                        <span>yusufziyaunel@gmail.com</span>
-                    </div>
-                    <div class="contact-item" onclick="copyToClipboard('+905072773568')">
-                        <i class="fas fa-phone"></i>
-                        <span>+905072773568</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://tr.linkedin.com/in/yusufziyaunel" target="_blank">LinkedIn Profile</a>
-                    </div>
+<!-- Hero Section -->
+<section id="home" class="relative min-h-screen flex items-center">
+    <!-- Animated Gradient Background -->
+    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-black via-purple-950 to-black animate-gradient-x"></div>
+    
+    <div class="container relative z-10 mx-auto px-6" data-aos="fade-up">
+        <div class="max-w-4xl">
+            <!-- Name with Sparkles Effect -->
+            <div class="sparkles-container relative">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
+                    Yusuf Ziya ÜNEL
+                </h1>
+                <div class="sparkles-effect"></div>
+            </div>
+
+            <!-- Title -->
+            <h2 class="text-2xl md:text-3xl text-gray-300 mb-6">
+                IP/MPLS Network Engineer
+            </h2>
+
+            <!-- Description -->
+            <p class="text-xl text-gray-400 mb-8">
+                Specializing in IP/MPLS networks, network automation, and technical support, and network design
+            </p>
+
+            <!-- Contact Information -->
+            <div class="flex flex-wrap gap-4">
+                <!-- Email -->
+                <div 
+                    class="flex items-center gap-2 px-4 py-2 bg-opacity-20 bg-white backdrop-blur-sm rounded-lg cursor-pointer hover:bg-opacity-30 transition-all duration-300"
+                    onclick="copyToClipboard('yusufziyaunel@gmail.com')"
+                >
+                    <i class="fas fa-envelope text-white"></i>
+                    <span class="text-white">yusufziyaunel@gmail.com</span>
                 </div>
+
+                <!-- Phone -->
+                <div 
+                    class="flex items-center gap-2 px-4 py-2 bg-opacity-20 bg-white backdrop-blur-sm rounded-lg cursor-pointer hover:bg-opacity-30 transition-all duration-300"
+                    onclick="copyToClipboard('+905072773568')"
+                >
+                    <i class="fas fa-phone text-white"></i>
+                    <span class="text-white">+905072773568</span>
+                </div>
+
+                <!-- LinkedIn -->
+                <a 
+                    href="https://tr.linkedin.com/in/yusufziyaunel" 
+                    target="_blank"
+                    class="flex items-center gap-2 px-4 py-2 bg-opacity-20 bg-white backdrop-blur-sm rounded-lg hover:bg-opacity-30 transition-all duration-300"
+                >
+                    <i class="fab fa-linkedin text-white"></i>
+                    <span class="text-white">LinkedIn Profile</span>
+                </a>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container" data-aos="fade-up">
